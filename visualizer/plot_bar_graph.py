@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+# plot accuracy vs class, num of instances vs class etc.
 def plot_bar(yval, xval, xlabel, ylabel, title):
     index = np.arange(len(xval))
     plt.bar(index, yval)
@@ -12,6 +13,7 @@ def plot_bar(yval, xval, xlabel, ylabel, title):
     plt.show()
 
 
+# compare accuracy of two methods vs class
 def plot_multiple_bar(y1val, y2val, xval, xlabel, ylabel, title):
     ax = plt.subplot(111)
     bar_width = 0.3
