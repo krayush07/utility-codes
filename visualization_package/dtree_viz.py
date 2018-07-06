@@ -1,6 +1,11 @@
 from sklearn.datasets import load_iris
 from sklearn import tree
 
+'''
+    To view decision tree in PNG format:
+        dot -Tpng dtree.dot -o tree.png
+'''
+
 def load_data_set():
     iris = load_iris()
     return iris
